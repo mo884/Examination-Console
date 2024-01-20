@@ -1,9 +1,4 @@
 ﻿using Examination.BL.StudentSolve.ModelVM;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Examination.BL.StudentSolve.Command
 {
@@ -18,10 +13,11 @@ namespace Examination.BL.StudentSolve.Command
             int Count = 0;
             for (int i = 0; i < exam.Questions.Count; i++)
             {
-                
+                double Degree = exam.Questions[i].mark/exam.Questions[i].body.Count;
                 for (int j = 0; j < exam.Questions[i].body.Count; j++)
                 {
-                    studentAnswers.Add(new StudentAnswer() { StudentAnswerChoose=studentAnswerVM.CorrectAnser[Count++], CorrectAnswer= exam.Questions[i].body[j].CorrectChoise });
+                    
+                    studentAnswers.Add(new StudentAnswer() { StudentAnswerChoose=studentAnswerVM.CorrectAnser[Count++], CorrectAnswer= exam.Questions[i].body[j].CorrectChoise,Degree = Degree });
                 }
             }
             exam.StudentExams.Add(studentAnswerVM.Student, studentAnswers);

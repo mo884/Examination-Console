@@ -15,12 +15,15 @@ namespace Examination.PL.Controller.Identities
         ExamSolveController ExamSolveController;
         IGetStudentByID StudentController;
         AddStudentAnswer addStudentAnswer;
+        
+        
         public IdentetyController()
         {
             admin = new Admin();
             ExamSolveController = new ExamSolveController();
             StudentController = new GetStudentByID();
             addStudentAnswer = new AddStudentAnswer();
+           
         }
         public static Identity Login()
         {
@@ -81,6 +84,7 @@ namespace Examination.PL.Controller.Identities
 
                 addStudentAnswer.studentAnswer(studentAnswerVM);
 
+                CorrectExam.GetStudentChoise(solvingVM.Exam, student);
             }
         }
     }

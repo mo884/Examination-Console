@@ -32,8 +32,10 @@ namespace Examination.PL.Controller.Questions
             for (int i = 0; i< item?.Count; i++)
             {
                 Console.WriteLine(item[i]);
+                int Count = 0;
                 foreach (var ListQuestion in item[i].body)
                 {
+                   
                     Console.WriteLine(ListQuestion);
                 }
             }
