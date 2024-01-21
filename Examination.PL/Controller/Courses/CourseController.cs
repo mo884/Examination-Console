@@ -1,7 +1,4 @@
-﻿
-using Examination.DAL.Entities.Courses;
-
-namespace Examination.PL.Controller.Courses
+﻿namespace Examination.PL.Controller.Courses
 {
     public class CourseController
     {

@@ -1,13 +1,5 @@
-﻿using Examination.BL.ExamSolveRep;
-using Examination.BL.ModelVM;
-using Examination.BL.StudentSolve.Command;
-using Examination.PL.Controller.Courses;
-using Examination.PL.Controller.Exams;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
 
 namespace Examination.PL.Controller.StudentSolveExam
 {

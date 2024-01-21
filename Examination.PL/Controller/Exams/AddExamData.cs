@@ -1,9 +1,4 @@
-﻿
-
-using Examination.BL.ExamRep.ModelVM;
-using Examination.BL.QuestionRep.ModelVM;
-
-namespace Examination.PL.Controller.Exams
+﻿namespace Examination.PL.Controller.Exams
 {
     public static class AddExamData
     {

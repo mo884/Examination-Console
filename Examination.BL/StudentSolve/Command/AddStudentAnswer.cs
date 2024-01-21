@@ -7,7 +7,7 @@ namespace Examination.BL.StudentSolve.Command
         public void studentAnswer(StudentAnswerVM studentAnswerVM)
         {
             Exam exam = DataBase.Courses?.Where(c => c.Id == studentAnswerVM.Id)?.FirstOrDefault()?.Exams?.Where(exam => exam.ID == studentAnswerVM.ExamId)?.FirstOrDefault();
-            
+            Degree degree = new Degree();
             List<StudentAnswer> studentAnswers = new List<StudentAnswer>();
 
             int Count = 0;
@@ -20,7 +20,8 @@ namespace Examination.BL.StudentSolve.Command
                     studentAnswers.Add(new StudentAnswer() { StudentAnswerChoose=studentAnswerVM.CorrectAnser[Count++], CorrectAnswer= exam.Questions[i].body[j].CorrectChoise,Degree = Degree });
                 }
             }
-            exam.StudentExams.Add(studentAnswerVM.Student, studentAnswers);
+            degree.studentAnswer = studentAnswers;
+            exam.StudentExams.Add(studentAnswerVM.Student, degree);
 
 
 

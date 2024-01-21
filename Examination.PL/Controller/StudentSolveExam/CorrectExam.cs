@@ -1,9 +1,4 @@
-﻿using Examination.PL.Controller.Questions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Examination.PL.Controller.StudentSolveExam
 {
@@ -15,10 +10,10 @@ namespace Examination.PL.Controller.StudentSolveExam
 
             Console.Clear();
             
-            double Degree = exam.StudentExams[student].Where(a => a.CorrectAnswer == a.StudentAnswerChoose).Sum(a => a.Degree);
+            double Degree = exam.StudentExams[student].studentAnswer.Where(a => a.CorrectAnswer == a.StudentAnswerChoose).Sum(a => a.Degree);
+            exam.StudentExams[student].FinallStudentDegree = Degree;
 
-
-            Console.WriteLine($@"
+             Console.WriteLine($@"
 
 
 
@@ -29,7 +24,7 @@ namespace Examination.PL.Controller.StudentSolveExam
                                                     Your Degree : {Degree}
 
 
-                                                    {getAppreciation(exam.StudentExams[student].Sum(a => a.Degree), Degree)}
+                                                    {getAppreciation(exam.StudentExams[student].studentAnswer.Sum(a => a.Degree), Degree)}
 
                                          
 

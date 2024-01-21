@@ -1,7 +1,4 @@
-﻿using Examination.DAL.Entities.Identity;
-using System.Collections.Generic;
-
-namespace Examination.DAL.Data
+﻿namespace Examination.DAL.Data
 {
     public static class DataBase
     {

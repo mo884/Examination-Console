@@ -1,13 +1,4 @@
-﻿using Examination.BL.ExamSolveRep;
-using Examination.BL.IdentityRep.Quireies;
-using Examination.BL.ModelVM;
-using Examination.BL.StudentSolve.Command;
-using Examination.BL.StudentSolve.ModelVM;
-using Examination.PL.Controller.AdminDashBord;
-using Examination.PL.Controller.Students;
-using Examination.PL.Controller.StudentSolveExam;
-
-namespace Examination.PL.Controller.Identities
+﻿namespace Examination.PL.Controller.Identities
 {
     public  class IdentetyController
     {

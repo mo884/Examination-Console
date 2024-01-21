@@ -1,11 +1,4 @@
-﻿
-using Examination.BL.ExamRep.Command;
-using Examination.BL.ExamRep.ModelVM;
-using Examination.BL.ExamRep.Queries;
-using Examination.BL.PracticeExam.Quieries;
-using Examination.DAL.Entities.ExamVM;
-
-namespace Examination.PL.Controller.Exams
+﻿namespace Examination.PL.Controller.Exams
 {
     public class ExamsController
     {

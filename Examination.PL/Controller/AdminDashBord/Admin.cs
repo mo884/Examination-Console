@@ -1,15 +1,4 @@
-﻿using Examination.PL.Controller.Courses;
-using Examination.PL.Controller.Exams;
-using Examination.PL.Controller.Identities;
-using Examination.PL.Controller.Questions;
-using Examination.PL.Controller.Students;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Examination.PL.Controller.AdminDashBord
+﻿namespace Examination.PL.Controller.AdminDashBord
 {
     public class Admin
     {
